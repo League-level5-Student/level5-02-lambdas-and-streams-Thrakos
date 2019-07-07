@@ -1,4 +1,4 @@
-package _03_Sorting_With_Streams;
+ package _03_Sorting_With_Streams;
 
 import java.util.Arrays;
 import java.util.Random;
@@ -22,6 +22,12 @@ public class StreamSorter {
 		//   They should be in ascending order.
 		ints.forEach((i) -> {
 			System.out.println(i);
+		});
+		
+		String[] strings = {"asdf", "sdfsdf"};
+		Stream<String> st = Arrays.stream(strings);
+		st.forEach((i)->{
+			System.out.println(i.charAt(0));
 		});
 		
 	}
